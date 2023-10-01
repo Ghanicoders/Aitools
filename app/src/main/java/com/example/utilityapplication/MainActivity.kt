@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // this is button is use for open watsapp webpage
+        //  when you click o this button then the button will redairect youto
         binding.btnwaweb.setOnClickListener {
             startintent("https://www.whatsapp.com")
         }
