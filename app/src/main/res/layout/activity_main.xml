@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbackground"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btngoole"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/chatbackground"
+        android:contentDescription="this is a goole link"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gool" />
+
+    <ImageButton
+        android:id="@+id/btnincogni"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/chatbackground"
+        android:contentDescription="this is a incognito tab"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btngoole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btngoole"
+        app:layout_constraintTop_toTopOf="@+id/btngoole"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/incognito" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="common applications"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnsnap"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/chatbackground"
+        android:contentDescription="this is snapchat tab"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngoole"
+        app:srcCompat="@drawable/snapchart" />
+
+    <ImageButton
+        android:id="@+id/btnwaweb"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/chatbackground"
+        android:contentDescription="this is a whatsapp web"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnincogni"
+        app:srcCompat="@drawable/watsapp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/gool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsnap" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
